@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>WEATHER REPORT</h1>
+            <div class="search-bar">
+                <i class="fa-solid fa-location-dot search-icon"></i>
+                <input type="text" id="locationInput" placeholder="Enter location">
+                <button id="searchButton">Search</button>
+            </div>
+            <div class="weather-info">
+                <div class="weather-item">
+                    <i class="fa-solid fa-temperature-high"></i>
+                    <h2>Temperature</h2>
+                    <p id="temperature">25°C</p>
+                </div>
+                <div class="weather-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <h2>Humidity</h2>
+                    <p id="humidity">60%</p>
+                </div>
+                <div class="weather-item">
+                    <i class="fa-solid fa-wind"></i>
+                    <h2>Wind Speed</h2>
+                    <p id="wind-speed">15 km/h</p>
+                </div>
+                <div class="weather-item">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloudiness</h2>
+                    <p id="cloudiness">40%</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="we.js"></script>
+</body>
+</html>
