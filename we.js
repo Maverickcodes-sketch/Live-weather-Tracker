@@ -20,19 +20,6 @@ function updateWeatherInfo(data) {
     document.getElementById('wind-speed').innerText = `${windSpeed} km/h`;
     document.getElementById('cloudiness').innerText = `${cloudiness}%`;
     
-    const weeklyForecast = data.daily.slice(1, 8);
-    const forecastContainer = document.querySelector('.week-forecast');
-    forecastContainer.innerHTML = '';
-    weeklyForecast.forEach(day => {
-        const dayElement = document.createElement('div');
-        dayElement.classList.add('day');
-        const dayHeader = document.createElement('h3');
-        dayHeader.innerText = day.dt_txt.split(' ')[0];
-        dayElement.appendChild(dayHeader);
-        const dayWeather = document.createElement('p');
-        dayWeather.innerText = `${day.temp.day}°C | <i class="fa-solid fa-${day.weather[0].icon}"></i> ${day.weather[0].description}`;
-        dayElement.appendChild(dayWeather);
-        forecastContainer.appendChild(dayElement);
     });
 }
 
